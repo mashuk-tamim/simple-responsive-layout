@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+            max-width: 900px;
+            /* border: 2px solid red; */
+            margin: auto;
+        }
+
+        .img-container {
+            display: flex;
+            width: 100%;
+            /* border: 2px solid cyan; */
+            gap: 5px;
+        }
+
+        .img-container div {
+            width: 50%;
+        }
+
+        .img-container img {
+            width: 100%;
+            border: 2px solid green;
+        }
+
+        @media screen and (max-width: 576px) {
+            .img-container {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                /* border: 2px solid cyan; */
+                gap: 5px;
+            }
+
+            .img-container div {
+                width: 100%;
+            }
+
+            .img-container img {
+                width: 100%;
+                border: 2px solid red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Responsive Website</h1>
+    <ol>
+        <li>Viewport meta tag</li>
+        <li>CSS relative unit(eg. %, em, rem etc)</li>
+        <li>Body max-width and horizontal center align</li>
+        <li>Image fluid</li>
+        <li>Two column flex and use media query with flex direction</li>
+        <li>Grid Layout</li>
+        <li>Manu Responsive (need javascript)</li>
+    </ol>
+    <main>
+        <div class="img-container">
+            <div class="image">
+                <h4>বাঘ্র মামা ১</h4>
+                <img src="images/tiger.jpeg" alt="">
+            </div>
+            <div class="image">
+                <h4>বাঘ্র মামা ২</h4>
+                <img src="images/tiger2.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
